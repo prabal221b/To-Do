@@ -128,9 +128,11 @@ addButton.addEventListener('click',()=>{
     addButton.disabled = true;
     addButton.classList.add('bg-gray-500');
     addButton.classList.remove('bg-black');
+    
+    addTaskButton.classList.add('hidden');
 
     renderTodos();
-    addTaskButton.classList.remove('hidden');
+    
 })
 
 
