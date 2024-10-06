@@ -25,6 +25,7 @@ addTaskButton.addEventListener('click',()=>{
 
 cancelButton.addEventListener('click',()=>{
     addTaskContainer.classList.add('hidden');
+    addTaskButton.classList.remove('hidden');
 })
 
 checkInput=()=>{
@@ -74,6 +75,9 @@ renderTodos=()=>{
         
     
     todoContainer.appendChild(taskDiv);
+    
+    
+    
     })
     let mark = document.querySelectorAll('.markDone');
     mark.forEach((taskCompleted)=>{
@@ -104,8 +108,7 @@ renderTodos=()=>{
     animation: 150,
     ghostClass: 'blue-background-class'
     });
-
-    addTaskButton.classList.remove('hidden');
+    
 }
 
 
@@ -119,6 +122,7 @@ addButton.addEventListener('click',()=>{
     }
     todos.push(task);
     addTaskContainer.classList.add('hidden');
+    addTaskButton.classList.remove('hidden');
 
     taskName.value = '';
     taskDescription.value = '';
@@ -127,16 +131,7 @@ addButton.addEventListener('click',()=>{
     addButton.disabled = true;
     addButton.classList.add('bg-gray-500');
     addButton.classList.remove('bg-black');
-    
 
     renderTodos();
     
 })
-
-
-
-
-
-
-
-
