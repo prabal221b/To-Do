@@ -21,7 +21,8 @@ Follow these instructions to set up and run the project locally.
 
 Ensure you have the following installed on your local machine:
 
-- [Node.js](https://nodejs.org/en/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [SortableJS](https://sortablejs.github.io/Sortable/)
 - [npm](https://www.npmjs.com/)
 
 ### Installation
