@@ -74,9 +74,6 @@ renderTodos=()=>{
         
     
     todoContainer.appendChild(taskDiv);
-    
-    
-    
     })
     let mark = document.querySelectorAll('.markDone');
     mark.forEach((taskCompleted)=>{
@@ -107,6 +104,8 @@ renderTodos=()=>{
     animation: 150,
     ghostClass: 'blue-background-class'
     });
+
+    addTaskButton.classList.remove('hidden');
 }
 
 
@@ -129,7 +128,6 @@ addButton.addEventListener('click',()=>{
     addButton.classList.add('bg-gray-500');
     addButton.classList.remove('bg-black');
     
-    addTaskButton.classList.add('hidden');
 
     renderTodos();
     
